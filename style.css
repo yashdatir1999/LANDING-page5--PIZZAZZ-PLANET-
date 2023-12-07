@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: lightcoral; */
+    background-image: url(https://i.pinimg.com/564x/9a/d8/67/9ad867b5599b4b38a2769c629076c194.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    backdrop-filter: blur(1vmax);
+    height: 10vh;
+    width: 100%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vmax;
+}
+.nav >input{
+    padding: 0.3vmax 1vmax;
+    border-radius: 2vmax;
+    border: none;
+    background-color: transparent;
+    border: 0.1vmax solid whitesmoke;
+    color: whitesmoke;
+    font-weight: 100;
+}
+.nav >input::placeholder{
+    color: black;
+    font-family: cursive;
+    color: whitesmoke;
+}
+.nav >ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3vmax;
+    /* background-color: aqua; */
+    padding: 0.5vmax 2.5vmax;
+    border-bottom-left-radius: 5vmax;
+    border-bottom-right-radius: 5vmax;
+    border-bottom: 0.2vmax dashed rgba(245, 245, 245, 0.291);
+}
+.nav >ul >li{
+    user-select: none;
+    /* background-color: lawngreen; */
+    padding: 0.2vmax 1.5vmax;
+    border-top-left-radius: 5vmax;
+    border-top-right-radius: 5vmax;
+    border-top:0.1vmax solid transparent ;
+    transition: all linear 0.2s;
+    font-family: cursive;
+    color: whitesmoke;
+}
+.nav >ul >li:hover{
+    border-top:0.1vmax solid rgba(245, 245, 245, 0.291) ;
+    cursor: pointer;
+}
+.logo >h1{
+    user-select: none;
+    font-size: 2vmax;
+    font-weight: 900;
+    font-family: 'Kaushan Script', cursive;
+    color: whitesmoke;
+    text-shadow: 0 0 1vmax rgba(245, 245, 245, 0.807);
+}
+.page1-contener{
+    height: 90vh;
+    width: 100%;
+    /* background-color: lightsalmon; */
+    position: relative;
+    display: flex;
+
+    /* mix-blend-mode: color-burn; */
+}
+.page1-left{
+    user-select: none;
+    /* background-color: gray; */
+    height: 90vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.page1-left >p{
+    width: 100%;
+    transform: skew(-15deg);
+    /* background-color: lightcoral; */
+    font-family: cursive;
+    line-height: 2.5vmax;
+    padding-left: 7vmax;
+    font-size: 2vmax;
+    color: whitesmoke;
+}
+.page1-right{
+    /* background-color: lightskyblue; */
+    height: 90vh;
+    width: 40%;
+    background-image: url(./page1\ pizza.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
